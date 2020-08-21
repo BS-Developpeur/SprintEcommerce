@@ -1,0 +1,118 @@
+/* ======== style general==============*/
+body {
+    color: #505050;
+  margin-top: 20px;
+  
+    width: 1080px;
+    margin: auto;
+   
+}
+
+html {
+    height: 100%;
+}
+
+html,
+body {
+   
+ 
+}
+img {
+	
+}
+
+/* style du header contenat l image     */
+
+
+/* style de  limage en fond */
+
+header{
+    width: 100%;
+    height: 200px;
+    background-color: antiquewhite;
+    margin-top: 10px;
+}
+header img {
+   
+
+   
+    object-fit:fill;
+     height:100%;
+    width: 100%;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+    position: relative;
+    mix-blend-mode: multiply;
+}
+main img{
+    
+     position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: fill;
+     height:100%; 
+     width: 100%;
+    opacity: 0.3;
+}
+#authentification{
+    z-index: 1;
+    margin-top: 20px;
+   
+    height: auto;
+    width: 400px;
+    display: flex;
+    flex-direction:column;
+}
+
+input[type=text]{
+   margin-top: 30px;
+    font-size: 40px;
+   
+}
+input[type=password]{
+     font-size: 40px; 
+}
+
+input[type=submit]{
+    width: 200px;
+    align-self: center;
+    background-color:#BD1818;
+    color:white;
+    height: 100px;
+    border-radius:  20px;
+     font-size: 40px;
+}
+
+input:hover[type=submit] {
+    cursor: pointer;
+  
+}
+
+
+/* style du fformulaire  */
+
+
+footer{
+    height: 200px;
+    width: 100%;
+    background-color: #A74D44;
+}
+span{
+    color: red;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,233 @@
+/* ======== style general==============*/
+body {
+    color: #505050;
+    margin-top: 20px;
+
+    width: 1080px;
+    margin: auto;
+    background-color: antiquewhite;
+   
+
+}
+
+html {
+    height: 100%;
+}
+
+html,
+body {}
+
+img {}
+
+/* ============ style de l entete a savoir le logo et la navigation secondaire =============== */
+body > header {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+    height: 200px;
+    background-color: #A74D44;
+
+
+
+}
+
+body > header > #logo {
+
+    margin-left: 20px;
+
+    height: auto;
+    margin-top: 10px;
+    width: 15px;
+}
+
+body > header > #logo > img {
+    object-fit: cover;
+
+}
+
+/* ========================les déclarations pour le menu commencent ici ==========================*/
+
+body > header > nav ul li,
+body nav ul li > * {
+    list-style: none;
+
+
+}
+
+body > header > nav {
+    position: relative;
+    margin-top: 20px;
+    min-height: 45px;
+    width: 100%;
+
+}
+
+body > header > nav > ul {
+
+    margin: 0;
+    padding: 0;
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-grow: 1;
+    background-color: white;
+    font-size: 16px;
+
+
+}
+
+/*== cacher les ul de li menu */
+body > header > nav > ul ul {
+    display: none;
+    position: absolute;
+
+
+}
+
+
+body > header > nav > ul > li:hover > a {
+
+    border-bottom: 5px solid blue;
+    color: #A74D44;
+    display: block;
+
+}
+
+body > header > nav > ul > li > a {
+
+    margin-right: 30px;
+    color: #305C63;
+   
+
+}
+
+
+/*  faire apparaitre les sous lien au survole*/
+body > header > nav ul li:hover > ul {
+
+    display: flex;
+    flex-direction: column;
+
+    background: hsla(175, 65%, 40%, .3);
+    z-index: 1;
+    padding-left: 0;
+    min-width: 100px;
+
+}
+
+/* selecteur ci-apres pour les a du sous menu seulement*/
+body > header > nav > ul > li ul li a:hover {
+
+    background: rgba(0, 0, 255, 0.38);
+    display: inline-block;
+    width: 100%;
+    color: white;
+
+
+}
+.icone-admin>p{
+    color: aliceblue;
+    font-size: 20px;
+
+}
+
+body > header > nav > ul > li > a {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: black;
+
+
+}
+
+/*  les less sous sous menus a droite disposer correctement*/
+body > header > nav > ul ul li {
+
+    position: relative;
+    /* position par rapport au selecteur enfant*/
+    margin-bottom: 10px;
+
+}
+
+body > header > nav > ul li a {
+    text-decoration: none;
+}
+
+.authentification > a {
+    color: white;
+    text-decoration: none;
+}
+
+.authentification > a:hover {
+
+    text-decoration: underline;
+}
+
+
+
+body > header > nav > ul ul li ul {
+
+    position: absolute;
+    /* position par rapport au parent pour les sous-liens  */
+    left: 100%;
+    top: 0;
+
+}
+
+body > header > nav > ul ul li ul > li {
+    width: auto;
+    display: inline-block;
+
+}
+
+
+body > header > nav > ul ul li ul > li {
+    background: rgba(0, 0, 255, 0.38);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 5px;
+
+
+}
+
+body > header > nav > ul ul li ul > li:hover > a {
+
+    color: white;
+}
+
+/*===============style  arborescence principale============*/
+
+nav {}
+
+main {
+    background-color: antiquewhite;
+}
+
+/*===== ===============syle du main avec les cadres===============*/
+main > section > .conteneurs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-grow: 1;
+    align-content: center;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+
+/*  -==== style du form ajout client===================*/
+
+
+
+
+
+footer {
+    background-color: skyblue;
+}

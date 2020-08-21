@@ -1,0 +1,100 @@
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.iconify:hover{
+    background-color: #A74D44;
+}
+
+/* Styles de la table */
+table#p{
+    margin:20px 0 0 0;
+    border-collapse: collapse; /* http://www.w3schools.com/cssref/pr_border-collapse.asp*/
+    border-spacing: 0;
+    background: black url(planet.png) no-repeat top center;
+    color:aliceblue;  
+}
+
+table#p td, table#p th{
+    text-align:center;
+}
+
+table#p thead{
+    font-size: .8em;
+    line-height: 12px;
+    background:#A74D44;
+    text-transform: uppercase;
+}
+
+table#p thead th{
+    color:white;
+    padding: 8px;
+    vertical-align: bottom;
+}
+
+/* largeur de chacune des rangees 1,2,3,4*/
+table#p thead th:nth-child(1){
+    width:5%;
+    text-align:left;
+    padding-left:20px;
+}
+
+table#p thead th:nth-child(2){
+    width:35%;
+}
+
+table#p thead th:nth-child(3){
+    width:35%;
+}
+table#p thead th:nth-child(6){
+    width:30%;
+}
+
+
+table#p thead th:nth-child(4){
+    width:15%;
+     text-align:left;
+    padding-left:20px;
+}
+table#p thead th:nth-child(5){
+    width:15%;
+     text-align:left;
+    padding-left:20px;
+}
+
+
+table#p tbody{
+    font-size:.9em;
+    line-height: 15px;
+}
+
+table#p tbody tr{
+    border-top: 1px solid #3A3B60;
+}
+
+table#p tbody td{
+    padding: 12px;
+}
+
+
+
+/* emphase sur les rangees impaires*/
+table#p tbody tr:nth-child(odd){
+    background: hsla(50,50%,95%,.2);
+}
+
+/* le hover des rangees du tableau (doit être placé après nth-child odd)*/
+table#p tbody tr:hover{
+    background: hsla(50,10%,50%,.9);
+}
+
+
+
+/* emphase sur la premiere colonne*/
+table#p tbody td:first-child{
+    text-align:left;
+    padding-left:20px;
+background: #A74D44; 
+}
